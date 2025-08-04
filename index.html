@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hallie’s Birthday Wishlist 🌼</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #fdf4ea;
+      color: #4a3b3b;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 2px solid #d6b18a;
+    }
+
+    .logo {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.8em;
+      color: #613c2d;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background-color: #ffe38c;
+      color: #4a3b3b;
+      border: 2px solid #cc9345;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      background-color: #ffd65d;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-family: 'Shrikhand', cursive;
+      font-size: 3.5em;
+      color: #502a1f;
+      margin: 0;
+      margin-left: 110px;
+      text-shadow:
+     3px  3px 0 #ffd194,
+     6px  6px 0 #ffbf69,
+     9px  9px 0 #8c5430;
+    }
+
+    .hero-text p {
+      font-size: 1.2em;
+      margin: 20px 0;
+      margin-left: 90px;
+    }
+
+    .see-more-btn {
+      background-color: #ffe38c;
+      color: #4a3b3b;
+      border: 2px solid #cc9345;
+      border-radius: 25px;
+      font-size: 1.2em;
+      padding: 12px 21px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      text-decoration: none;
+      margin-left: 90px;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffd65d;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #9a7d6a;
+    }
+
+    .photo-burst {
+      width: 400px;
+      aspect-ratio: 1;
+      background-image: url("your-photo.png"); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+
+      mask: 
+        radial-gradient(100% 100%, #000 38%, #0000 19.2%) center / cover no-repeat,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 93.3% 75% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 75% 93.3% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 50% 100% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 25% 93.3% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 6.7% 75% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 0% 50% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 6.7% 25% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 25% 6.7% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 50% 0% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 75% 6.7% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 93.3% 25% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 100% 50% / 21% 21%;
+
+      -webkit-mask: 
+        radial-gradient(100% 100%, #000 38%, #0000 19.2%) center / cover no-repeat,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 93.3% 75% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 75% 93.3% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 50% 100% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 25% 93.3% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 6.7% 75% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 0% 50% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 6.7% 25% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 25% 6.7% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 50% 0% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 75% 6.7% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 93.3% 25% / 21% 21%,
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat 100% 50% / 21% 21%;
+
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+
+      border: 5px solid #ffe38c;
+      box-shadow: 0 0 20px rgba(255, 211, 134, 0.6);
+      margin-right: 70px;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .photo-burst {
+        margin: 50px 0 0;
+      }
+    }
+    .corner-flower {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 550px;
+    transform: rotate(180deg);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .flower-deco {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -2;
+  }
+
+  .flower {
+    position: absolute;
+    opacity: 1;
+    animation: float 8s ease-in-out infinite alternate;
+  }
+
+  /* Customize each flower's position, size & rotation */
+  .f1 {
+    top: 300px;
+    left: 700px;
+    width: 400px;
+    transform: rotate(10deg);
+  }
+
+  .f2 {
+    top: 100px;
+    left: 300px;
+    width: 250px;
+    transform: rotate(-25deg);
+  }
+
+  .f3 {
+    top: 0px;
+    left: 560px;
+    width: 350px;
+    transform: rotate(35deg);
+  }
+
+  .f4 {
+    top: 530px;
+    left: 1100px;
+    width: 250px;
+    transform: rotate(60deg);
+  }
+
+  .f5 {
+    top: 50px;
+    left: 1150px;
+    width: 400px;
+    transform: rotate(180deg);
+  }
+
+  .f6 {
+    top: 60px;
+    left: 40px;
+    width: 150px;
+    transform: rotate(15deg);
+  }
+
+  /* Optional floating animation for ✨ */
+  @keyframes float {
+    0% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+    100% { transform: translateY(5px) rotate(var(--rot, 0deg)); }
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌼 BIRTHDAY WISHLIST</div>
+    <nav>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="claims.html">Claim a Gift</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>It's My Birthday</h1>
+      <p>   Dearly Beloved, <br>
+      My birthday draws near!<br>
+      I’ve made this cute little website to share my wishlist with all you beautiful people!<br>
+      Click below to see what I’ve been eyeing off! xx</p>
+      <a href="wishlist.html" class="see-more-btn">See more</a>
+    </div>
+    <div class="photo-burst"></div>
+  </section>
+
+  <footer>
+    Made with love, sparkles & vibes ✨
+  </footer>
+
+  <img src="flower-corner.png" alt="flower corner" class="corner-flower">
+
+  <div class="flower-deco">
+    <img src="flower1.png" class="flower f1">
+    <img src="flower2.png" class="flower f2">
+    <img src="flower3.png" class="flower f3">
+    <img src="flower4.png" class="flower f4">
+    <img src="circle1.png" class="flower f5">
+    <img src="circle2.png" class="flower f6">
+  </div>
+
+</body>
+</html>
